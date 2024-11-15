@@ -8,7 +8,10 @@ const useRefreshToken = () => {
         })
        
         setAuth(prev=>{
-            return{...prev,accessToken:response.data.accessToken}
+            return{
+                ...prev,
+                roles:response.data.roles
+                ,accessToken:response.data.accessToken}
 
         })
         

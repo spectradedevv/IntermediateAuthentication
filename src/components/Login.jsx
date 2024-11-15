@@ -39,8 +39,6 @@ const Login = () => {
            
             const roles = response?.data?.roles;
             setAuth({ user, pwd, roles, accessToken});
-            console.log(auth)
-            console.log(accessToken)
             setUser('' );
             setPwd('');
            
